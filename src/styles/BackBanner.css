@@ -1,0 +1,33 @@
+#banner {
+  background-image: url("../images/banner.jpg");
+  width: 1337px;
+  height: 464px;
+  padding: 214px, 278px, 144px, 278px;
+  margin-bottom: 0px;
+}
+
+#bannerInfo {
+  font-family: Crimson Pro;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  width: 900px;
+  height: 106px;
+  position: absolute;
+  top: 214px;
+  left: 278px;
+}
+
+/* responsive for mob */
+@media only screen and (max-width: 335px) {
+  #bannerInfo {
+    font-size: 33px;
+    line-height: 53px;
+    width: 500px;
+    left: 100px;
+  }
+}

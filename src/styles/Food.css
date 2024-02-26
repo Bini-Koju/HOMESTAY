@@ -1,0 +1,73 @@
+#container {
+  background-color: rgb(184, 226, 226);
+  width: 1337px;
+}
+.title {
+  margin-top: 0;
+  font-family: Crimson Pro;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#foodMenu {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: space-around;
+}
+
+#imageFood {
+  width: 253px;
+  height: 221px;
+  padding: 10px;
+}
+#messageFood {
+  text-align: center;
+  font-family: Dosis;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  margin-top: 0;
+}
+
+/* glimpse.jsx */
+.items {
+  background-color: #ffffff;
+  width: 272px;
+  height: 322px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 335px) {
+  #foodMenu {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-rows: 200px 200px;
+    row-gap: 180px;
+    margin-left: 60px;
+  }
+  .title {
+    text-align: start;
+    margin-left: 150px;
+  }
+  .items {
+    width: 372px;
+  }
+  #imageFood {
+    width: 353px;
+  }
+}
+@media only screen and (max-width: 265px) {
+  .title {
+    text-align: start;
+    margin-left: 20px;
+  }
+  #foodMenu {
+    display: grid;
+    grid-template-columns: 300px 800px;
+  }
+}

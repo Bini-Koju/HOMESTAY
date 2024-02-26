@@ -1,0 +1,111 @@
+#main {
+  background-color: rgb(184, 226, 226);
+  width: 1337px;
+}
+#detailsReview {
+  height: 290px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+#imageCustomer {
+  width: 109px;
+  height: 109px;
+}
+#info {
+  display: flex;
+  justify-content: space-around;
+  width: 357px;
+  height: 109px;
+  margin: 10px;
+}
+#info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#info div p {
+  font-family: Crimson Pro;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#msgCustomer {
+  width: 300px;
+  height: 153px;
+  font-family: Dosis;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin: 12px;
+  text-align: justify;
+}
+.propsReview {
+  margin-bottom: 0;
+}
+.prop {
+  padding: 0;
+  margin: 0;
+}
+
+/* review page css */
+#detailInfo {
+  display: flex;
+  justify-content: space-around;
+}
+.cust {
+  font-family: Crimson Pro;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+}
+.cust2 {
+  font-family: Crimson Pro;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #d40000;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* responsive */
+@media only screen and (max-width: 335px) {
+  #detailInfo {
+    display: grid;
+    justify-content: start;
+    margin-left: 80px;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px;
+    column-gap: 50px;
+  }
+  .cust {
+    padding-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  #detailInfo {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+  }
+  .cust {
+    padding-top: 250px;
+    text-align: start;
+    margin-left: 50px;
+  }
+  .cust2{
+    text-align: start;
+    margin-left: 50px;
+  }
+}
